@@ -1,0 +1,28 @@
+<form class="admin" ng-submit = 'vm.saveFootwear()'>
+  <div class="admin-inner">
+    <input type="text" placeholder="Enter price" ng-model = 'vm.price' required>
+    <input type="text" placeholder="Enter gender" ng-model = 'vm.gender' required>
+    <input type="text" placeholder="Enter model" ng-model = 'vm.model' required>
+    <button type="submit" class="btn-submit" ng-click = "vm.saveFootwear()">Add footwear</button>
+  </div>
+</form>
+<table>
+  <thead>
+    <tr>
+      <td>Price</td>
+      <td>Gender</td>
+      <td>Model</td>
+      <td>Action</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat = "footwear in vm.footwears">
+      <td ng-bind = "footwear.price"></td>
+      <td ng-bind = "footwear.gender"></td>
+      <td ng-bind = "footwear.model"></td>
+      <td>
+        <button ng-click = "deleteFootwear(footwear)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

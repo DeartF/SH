@@ -1,0 +1,25 @@
+/*atoms*/
+
+@import url("pages/login.css");
+@import url("pages/signUp.css");
+@import url("pages/menShoes.css");
+@import url("pages/admin.css");
+
+/*moleculas*/
+
+@import url("vendor/reset.css");
+@import url("vendor/animate.css");
+@import url("vendor/css/all.css");
+@import url("components/header.css");
+@import url("components/fonts.css");
+@import url("components/btn.css");
+@import url("components/secondHeader.css");
+@import url("components/banner.css");
+@import url("components/other.css");
+@import url("components/selected.css");
+@import url("components/modelShoes.css");
+@import url("components/brands.css");
+@import url("components/LatestNews.css");
+@import url("components/usp.css");
+@import url("components/footer.css");
+@import url("components/footerSocial.css");

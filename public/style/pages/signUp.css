@@ -1,0 +1,148 @@
+.signup {
+	position: relative;
+	top: 130px;
+	width: 100%;
+	height: 85vh;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+	.signup__form {
+		position: relative;
+		width: 70%;
+		left: 15%;
+		top: 40px;
+		margin-bottom: 200px;
+	}
+
+		.signup__form-title {
+			font-size: 50px;
+			color: #d06f6f;
+			font-family: 'TruenoLt';
+			position: relative;
+			left: 15%;
+			top: 30px;
+		}
+
+		.signup__form-inputs {
+			position: relative;
+			left: 15%;
+			top: 70px;
+		}
+
+			.signup__input-text {
+				width: 80%;
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				justify-content: space-between;
+				-ms-align-items: center;
+				align-items: center;
+				margin: 30px 0;
+			}
+
+				.signup__input-text > span {
+					color: #d06f6f;
+					font-family: 'TruenoLt';
+					font-size: 18px;
+				}
+
+			.signup__input > input {
+				padding: 10px;
+				padding-left: 40px;
+				border: dashed 2px #d06f6f;
+				width: 100%;
+				outline: none;
+				transition: .3s ease-out;
+			}
+
+				.signup__input:hover > input {
+					border: dashed 2px #eb7171;
+				}
+
+				.signup__input {
+					transition: .3s ease-out;
+					width: 40%;
+				}
+
+				.signup__input:hover {
+					box-shadow: 2px 4px 24px 2px rgba(255,115,115,0.3);
+				}
+
+
+				.signup__input > i {
+					position: absolute;
+					padding: 12px 0 0 10px;
+					color: #d06f6f;
+					font-size: 20px;
+					transition: .3s ease-out;
+				}
+
+					.signup__input:hover > i {
+						color: #eb7171;
+					}
+
+			.signup__submit {
+				color: #d06f6f;
+				border: 2px solid #d06f6f;
+				background-color: #fff;
+				padding: 10px 25px;
+				width: 80%;
+				font-size: 30px;
+				outline: none;
+				border-radius: 5px;
+				cursor: pointer;
+				font-family: 'Trueno';
+				overflow: hidden;
+				position: relative;
+				transition: .7s;
+				z-index: 2;
+			}
+
+				.signup__submit::before, .signup__submit::after {
+					position: absolute;
+					content: '';
+					width: 100%;
+					height: 100%;
+					background-color: #865353;
+					top: 0;
+					left: -100%;
+					opacity: .5;
+					transition: .4s;
+					z-index: -1;
+				}
+
+
+				.signup__submit:hover::before , .signup__submit:hover::after  {
+					left: 0;
+				}
+
+				.signup__submit:hover {
+					color: #fff;
+					border: 2px solid #865353;
+				}
+
+				.signup__submit::after {
+					opacity: 1;
+					transition-delay: .15s;
+				}
+
+			.signup__ui {
+				margin-top: 20px;
+			}
+
+				.signup__already {
+					color: #623232;
+					border-bottom: 1px solid #ff7373;
+					transition: all .2s;
+					font-size: 18px;
+				}
+
+				.signup__already:hover {
+					border-bottom: 1px solid #fff;
+				}

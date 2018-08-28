@@ -1,0 +1,27 @@
+<form class="login" ng-submit = "vm.login()">
+    <div class="login-form">
+      <span class="login-title">Sign in account</span>
+      <div class="login-inputs">
+        <div class="login-input-text">
+          <span>Email</span>
+          <div class="login-input">
+            <i class="fa fa-envelope"></i>
+            <input type="email" name="username" ng-model = "vm.email">
+          </div>
+        </div>
+        <div class="login-input-text">
+          <span>Password</span>
+          <div class="login-input">
+            <i class="fas fa-unlock"></i>
+            <input type="password" name="password" ng-model = "vm.password">
+          </div>
+        </div>
+        <button type="submit" class="login-submit">Sign in</button>
+        <br/>
+        <div class="login-reg">
+          <a href="#" class="login-regis">Forgot your password?</a>
+          <a href="#" class="login-regis" ui-sref = "registration">Registration</a>
+        </div>
+      </div>
+    </div>
+</form>

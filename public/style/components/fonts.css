@@ -1,0 +1,20 @@
+@font-face {
+	font-family: 'Nunito';
+	src: url('../fonts/Nunito-Regular.ttf');
+}
+
+body {
+	font-family: 'Nunito';
+}
+
+@font-face {
+	font-family: 'Trueno';
+	src: url('../fonts/TruenoRoundBd.ttf');
+	overflow: hidden;
+}
+
+@font-face {
+	font-family: 'TruenoLt';
+	src: url('../fonts/TruenoLt.otf');
+	overflow: hidden;
+}

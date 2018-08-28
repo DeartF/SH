@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html ng-app="sportshold">
+<head>
+	<title>Sportshold</title>
+	<base href="/">
+	<link rel="stylesheet" href="./style/all.css" type="text/css"/>
+	<link rel="icon" href="./img/small/favicon.png" sizes="16x16">
+</head>
+<body>
+	 <section class="header" ng-controller = "HeaderCtrl as vm">
+      <div class="header-inner">
+        <div class="nav">
+          <div class="nav-list animated zoomIn">
+            <li class="nav-list__item ">Support</li>
+            <li class="nav-list__item">Delivery</li>
+            <li class="nav-list__item">Legal</li>
+            <li class="nav-list__item">About us</li>
+          </div>
+        </div>
+        <div class="header-inner__info animated zoomIn">
+          <span class="header__price">$465.00 </span>
+          <span class="header__items"> 4 items </span>
+          <button class="btn btn-login" ng-if = '!session' ui-sref = 'login'>Login</button>
+          <button class="btn btn__reg" ng-if = '!session' ui-sref = 'registration'>Register</button>
+					<button class="btn btn__reg" ng-if = 'session' ng-click = "vm.logout()">Log out</button>
+        </div>
+      </div>
+    </section>
+    <section class="second-header">
+      <div class="second-header-inner">
+        <div class="logo animated zoomIn">
+          <img src="./img/small/Logo.png" alt="">
+        </div>
+        <div class="nav__second">
+          <div class="nav-list__second animated zoomIn">
+            <li class="nav-list__item-second" ui-sref = 'home'>Home</li>
+            <li class="nav-list__item-second" ui-sref = 'menshoes'>Men</li>
+            <li class="nav-list__item-second">Women</li>
+            <li class="nav-list__item-second">Children</li>
+          </div>
+        </div>
+      </div>
+    </section>
+	<ui-view>
+
+	</ui-view>
+	<section class="footer">
+    <div class="footer-inner">
+      <div class="footer-contact animated mov2">
+        <div class="footer-contact-info">
+          <img src="./img/small/FooterCall.png" alt="">
+          <div class="contact-text">
+            <span class="contact-title">CALL US</span>
+           <span class="contact-subtitle">+77472334431</span>
+          </div>
+        </div>
+        <div class="footer-contact-info ">
+          <img src="./img/small/FooterMail.png" alt="">
+          <div class="contact-text">
+            <span class="contact-title">EMAIL US</span>
+            <span class="contact-subtitle">i.artemon87@gmail.com</span>
+          </div>
+        </div>
+        <div class="footer-contact-info">
+          <img src="./img/small/FooterGeo.png" alt="">
+          <div class="contact-text">
+            <span class="contact-title">ADRESS </span>
+            <span class="contact-subtitle">Kazybek bi 117</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-info animated mov2">
+        <span class="footer-title">Navigation</span>
+        <span class="footer-subtitle" ui-sref = 'home'>Home</span>
+        <span class="footer-subtitle">Support</span>
+        <span class="footer-subtitle">Delivery</span>
+        <span class="footer-subtitle">About us</span>
+      </div>
+      <div class="footer-info animated mov2">
+        <span class="footer-title">categories</span>
+        <span class="footer-subtitle">Men</span>
+        <span class="footer-subtitle">Women</span>
+        <span class="footer-subtitle">Children</span>
+      </div>
+      <div class="footer-info animated mov2">
+        <span class="footer-title">sales</span>
+        <span class="footer-subtitle">New Arrivals</span>
+        <span class="footer-subtitle">Most Popular</span>
+        <span class="footer-subtitle">Top Picks</span>
+        <span class="footer-subtitle">Outlet</span>
+      </div>
+      <div class="footer-info animated mov2">
+        <span class="footer-title">support</span>
+        <span class="footer-subtitle">Shopping & Delivery</span>
+        <span class="footer-subtitle">Returnn Policy</span>
+        <span class="footer-subtitle">Terms of Service</span>
+        <span class="footer-subtitle">Privace Policy</span>
+        <span class="footer-subtitle">Contact us</span>
+      </div>
+    </div>
+  </section>
+  <section class="footer-social">
+    <div class="footer-social-inner animated mov3">
+      <img src="./img/small/Logo.png" alt="">
+      <div class="footer-copy">
+        <span class="footer-text">&copy; 2017 Sportshold. All rights reserved</span>
+      </div>
+      <div class="footer-soc">
+        <i class="fab fa-vk"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+    </div>
+  </section>
+</body>
+<script src ="/js/vendor/ng.min.js"></script>
+<script src ="/js/vendor/ng-route.min.js"></script>
+<script src ="/js/vendor/ng-cookies.min.js"></script>
+<script src ="/js/vendor/jquery-3.3.1.min.js"></script>
+
+<script src ="/app.js"></script>
+
+<script src ="/js/controllers/home.js"></script>
+<script src ="/js/controllers/basket.js"></script>
+<script src ="/js/controllers/login.js"></script>
+<script src ="/js/controllers/registration.js"></script>
+<script src ="/js/controllers/meshoes.js"></script>
+<script src ="/js/controllers/header.js"></script>
+<script src ="/js/controllers/admin.js"></script>
+
+<script src="/js/components/function.js"></script>
+
+</html>

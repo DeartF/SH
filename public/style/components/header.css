@@ -1,0 +1,134 @@
+.header {
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	background-color: #472424;
+	z-index: 12;
+}
+
+.header-inner {
+	height: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 4rem;
+}
+
+.header-inner__info {
+	height: 100%;
+}
+
+.header__carret {
+	width: 23px;
+	height: 17px;
+}
+
+.header__price {
+	color: #fff;
+	cursor: pointer;
+}
+
+.header__items {
+	color: #dcc5b8;
+	cursor: pointer;
+}
+
+.header__price:hover {
+	opacity: .7;
+}
+
+.header__items:hover {
+	opacity: .7;
+}
+
+.nav {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.nav-list {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+
+}
+
+.nav-list__item {
+	list-style: none;
+	padding-left: 10px;
+	-ms-align-items: center;
+	align-items: center;
+	color: #fff;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.nav-list__item:hover {
+	animation: bounceIn 3s infinite ease-out;
+}
+
+@keyframes bounceIn {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.3, 1.3, 1.6);
+    transform: scale3d(1.3, 1.3, 1.6);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.1, 1.1, 1.3);
+    transform: scale3d(1.1, 1.1, 1.3);
+  }
+
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.bounceIn {
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+}

@@ -1,0 +1,107 @@
+.last-news {
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+}
+
+.last-title {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	margin: 40px 0;
+}
+
+.last-title > span {
+	color: #623232;
+	font-size: 26px;
+	font-family: 'Trueno';
+	text-transform: uppercase;
+}
+
+.last-inner {
+	width: 80%;
+	padding: 0 2rem;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+} 
+
+.new-info {
+	margin-right: 40px;
+	width: 100%;
+}
+
+.new-info:last-child {
+	margin-right: 0;
+}
+
+.new-img {
+	z-index: -1;
+	width: 100%;
+	-webkit-box-shadow: 6px -4px 34px -1px rgba(140,38,38,.5);
+	-moz-box-shadow: 6px -4px 34px -1px rgba(140,38,38,.5);
+	box-shadow: 6px -4px 34px -1px rgba(140,38,38,.5);
+}
+
+.new-img > img {
+	width: 100%;
+}
+
+.new-text {
+	z-index: 1;
+	position: relative;
+	bottom: 120px;
+	left: 20px;
+}
+
+.new-date {
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Trueno';
+	display: block;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.new-subtitle {
+	color: #fff;
+	font-family: 'TruenoLt';
+	display: block;
+	font-size: 14px;
+	width: 90%;
+	margin-bottom: 10px;
+}
+
+.comment {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.comment:hover {
+	opacity: .9;
+}
+
+.new-comment {
+	color: #ff7373;
+	font-family: 'TruenoLt';
+	font-size: 12px;
+	margin-left: 10px;
+} 

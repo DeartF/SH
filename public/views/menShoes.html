@@ -1,0 +1,16 @@
+<section class="men">
+  <div class="men__inner">
+    <div class="men__inner-footwear mov3 animated">
+      <div class="model-info" ng-repeat = "men in vm.mens">
+        <div class="model-price-changed">
+          <span class="model-price-undiscount" ng-bind = "men.price"></span>
+        </div>
+        <img src="./img/medium/AdAlpha1M.png" alt="" class="model-photo">
+        <div class="model-mod">
+          <span class="model-gender" ng-bind = "men.gender"></span>
+          <span class="model" ng-bind = "men.model"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

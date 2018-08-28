@@ -1,0 +1,20 @@
+.premium {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+	margin-bottom: 65px;
+	width: 100%;
+}
+
+.premium > img {
+	width: 100%;
+	cursor: pointer;
+	position: relative;
+	right: 5%;
+}

@@ -1,0 +1,100 @@
+.model-footwear {
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+}
+
+.model-footwear-innered {
+	width: 80%;
+	display: flex;
+	margin: 0 auto;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+
+
+.model-footwear-inner {
+	width: 23%;
+	display: flex;
+	margin-bottom: 40px;
+
+}
+
+.model-footwear-innered .model-footwear-inner:last-child {
+	margin-right: 0px;
+}
+
+.model-info {
+	border: 2px solid #e0dfde;
+	border-radius: 3px;
+	padding: 8px;
+	width: 100%;
+}
+
+
+.model-price{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.model-price-changed {
+	margin-top: 4%;
+	margin-bottom: 10%;
+}
+
+.model-price-discount {
+	color: #ff7373;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.model-price-undiscount {
+	color: #8a8784;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.model-price-real {
+	text-decoration: line-through;
+	font-size: 14px;
+	margin-top: 2%;
+	color: #9a9794;
+}
+
+.model-price > img {
+	width: 36%;
+}
+
+.model-photo {
+	width: 100%;
+	transition: .5s ease-out;
+}
+
+.model-photo:hover  {
+	transform: scale3d(1.1 , 1.1 , 1.1);
+}
+
+.model-gender {
+	color: #8a8784;
+	font-family: 'Trueno';
+	display: block;
+	margin-bottom: 5%;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+.model {
+	color: #8a8784;
+	font-size: 14px;
+}
